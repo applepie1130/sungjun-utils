@@ -29,7 +29,7 @@ else
 fi
 
 if [[ $PID != '' ]]; then
-	#kill -9 $PID
+	kill -9 $PID
 	PID=`echo $PID | tr -d '\r'`
 	echo "Killed process [PID:$PID]"
 else
