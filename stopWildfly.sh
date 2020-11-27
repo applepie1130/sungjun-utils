@@ -5,7 +5,7 @@
 # Date        : 2016.10.30
 # Modified    : 2020.11.27
 # Author      : sungjun.kim6@cj.net
-# Description : ./stopWildfly.sh {mall|mcci}
+# Description : ./stopWildfly.sh {mall|cci}
 ######################################################
  
 
@@ -22,7 +22,7 @@ elif [[ $ARGUMENT == 'mall' ]]; then
 	PID=`ps -afx | grep -p 'mall' | grep -v 'grep' | grep -v $FILENAME | awk '{print $2}'`
 
 elif [[ $ARGUMENT == 'cci' ]]; then
-	PID=`ps -afx | grep -p 'mcci' | grep -v 'grep' | grep -v $FILENAME | awk '{print $2}'`
+	PID=`ps -afx | grep -p 'mcci\|cci' | grep -v 'grep' | grep -v $FILENAME | awk '{print $2}'`
 
 else 
 	PID=''
