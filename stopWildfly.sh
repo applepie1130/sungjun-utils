@@ -32,7 +32,7 @@ if [[ $PID != '' ]]; then
 	PID=`echo $PID | tr -d '\r'`
 	echo "Killed process [PID:$PID]"
 else
-	echo "Jboss Server is not running!!"
+	echo "Wildfly Server is not running!!"
 fi
 
 echo "======= End   : Killing Wildfly Server process ======="
