@@ -22,7 +22,7 @@ elif [[ $ARGUMENT == 'mall' ]]; then
 	PID=`ps -afx | grep -p 'mall' | grep -v 'grep' | grep -v $FILENAME | awk '{print $2}'`
 
 elif [[ $ARGUMENT == 'cci' ]]; then
-	PID=`ps -afx | grep -p 'mcci\|cci' | grep -v 'grep' | grep -v $FILENAME | awk '{print $2}'`
+	PID=`ps -afx | grep -p 'mcci' | grep -v 'grep' | grep -v $FILENAME | awk '{print $2}'`
 
 else 
 	PID=''
