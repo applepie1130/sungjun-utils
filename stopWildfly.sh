@@ -1,10 +1,11 @@
 #!/bin/bash
 
 ######################################################
-# Descriptin : To kill unfinished Wildfly Server process
-# Date       : 2016.10.30
-# Modified   : 2020.11.27
-# Author     : sungjun.kim6@cj.net
+# Descriptin  : To kill unfinished Wildfly Server process
+# Date        : 2016.10.30
+# Modified    : 2020.11.27
+# Author      : sungjun.kim6@cj.net
+# Description : ./stopWildfly.sh {mall|mcci}
 ######################################################
  
 
